@@ -1,106 +1,126 @@
-# 🧠 CNN Project — Handwritten Digit Recognition
+# 🧠 CNN Projects Collection
 
-This project implements a **Convolutional Neural Network (CNN)** to recognize handwritten digits (0–9) using the MNIST dataset.
+This repository contains multiple Convolutional Neural Network (CNN) projects built using TensorFlow.
 
-It is a beginner-friendly deep learning project and a starting point for computer vision.
-
----
-
-## 🚀 Project Overview
-
-The model:
-
-- Takes handwritten digit images as input
-- Extracts features using convolution layers
-- Predicts the correct digit
-
-This project demonstrates how CNNs work in image classification tasks.
+These projects demonstrate my learning journey in Deep Learning and Computer Vision.
 
 ---
 
-## 🎯 Objectives
-
-- Learn Convolutional Neural Networks (CNN)
-- Understand image preprocessing
-- Train deep learning models
-- Perform multi-class classification
-- Evaluate model performance
+# 📌 Projects Included
 
 ---
 
-## 📂 Dataset
+## 1️⃣ MNIST Handwritten Digit Recognition
 
-### MNIST Dataset
+### 📖 Description
+Classifies handwritten digits (0–9) using CNN.
 
-- 60,000 training images
-- 10,000 testing images
-- 28×28 grayscale images
-- 10 classes (digits 0–9)
+### 📊 Dataset
+Built-in dataset from TensorFlow  
+- 60,000 training images  
+- 10,000 testing images  
+- 28x28 grayscale images  
 
-Dataset loads automatically using TensorFlow.
-
----
-
-## 🏗️ Model Architecture
-
-Input (28×28×1)
-→ Conv2D (32 filters)
-→ MaxPooling
-→ Conv2D (64 filters)
-→ MaxPooling
-→ Flatten
-→ Dense (64)
-→ Output (10 classes)
+### 🎯 Accuracy
+~98–99%
 
 ---
 
-## ⚙️ Installation
+## 2️⃣ Cats vs Dogs Image Classifier
 
-### Clone repository
+### 📖 Description
+Binary image classification model that predicts whether an image is a cat or dog.
 
-git clone https://github.com/Abhishek01239/CNN-.git
-cd CNN-
+### 📊 Dataset
+- TensorFlow Datasets (cats_vs_dogs)
 
-### Install dependencies
-
-pip install tensorflow matplotlib
-
----
-
-## ▶️ Run Project
-
-python main.py
+### 🎯 Accuracy
+~85–95%
 
 ---
 
-## 📊 Results
+## 3️⃣ Fashion MNIST Image Classifier
 
-- Training Accuracy: ~99%
-- Testing Accuracy: ~98%
+### 📖 Description
+Classifies clothing images into 10 categories such as:
+T-shirt, Trouser, Dress, Sneaker, Bag, Coat, etc.
+
+### 📊 Dataset
+Built-in Fashion MNIST dataset from TensorFlow.
+
+### 🎯 Accuracy
+~88–92%
 
 ---
 
-## 🧩 Project Structure
+## 4️⃣ CIFAR-10 Image Classification (Advanced CNN)
 
+### 📖 Description
+Multi-class image classification model trained on real-world colored images.
+
+### 📊 Dataset
+CIFAR-10 dataset (built-in TensorFlow dataset)
+
+- 60,000 color images
+- 32x32 RGB images
+- 10 classes:
+  - Airplane
+  - Automobile
+  - Bird
+  - Cat
+  - Deer
+  - Dog
+  - Frog
+  - Horse
+  - Ship
+  - Truck
+
+### 🧠 Model Architecture
+Conv2D → MaxPooling → Conv2D → MaxPooling → Conv2D → MaxPooling →  
+Flatten → Dense → Dropout → Output (Softmax)
+
+### 🎯 Accuracy
+~70–80%
+
+---
+
+# 🏗 Project Structure
 CNN/
 │
-├── main.py
+├── mnist_cnn.py
+├── cat_dog_cnn.py
+├── fashion_cnn.py
+├── cifar10_cnn.py
 ├── README.md
 └── requirements.txt
 
----
-
-## 🔧 Future Improvements
-
-- Add dropout layer
-- Train longer epochs
-- Use custom handwritten images
-- Deploy as web app
-- Improve accuracy
 
 ---
 
-## 🛠 Technologies Used
+# ⚙️ Installation
+
+Clone repository:
+git clone https://github.com/Abhishek01239/CNN-.git
+
+cd CNN-
+
+Install dependencies:
+pip install tensorflow tensorflow-datasets matplotlib numpy
+
+---
+
+# ▶️ How To Run
+
+Run any project:
+python mnist_cnn.py
+python cat_dog_cnn.py
+python fashion_cnn.py
+python cifar10_cnn.py
+
+
+---
+
+# 🛠 Technologies Used
 
 - Python
 - TensorFlow / Keras
@@ -109,6 +129,33 @@ CNN/
 
 ---
 
-## 👨‍💻 Author
+# 📚 What I Learned
+
+- Convolutional Neural Networks (CNN)
+- Binary Classification
+- Multi-class Classification
+- RGB Image Processing
+- Dropout Regularization
+- Model Evaluation
+- Training vs Validation Accuracy Visualization
+
+---
+
+# 🚀 Future Improvements
+
+- Data Augmentation
+- Transfer Learning (MobileNet / ResNet)
+- Confusion Matrix Visualization
+- Model Deployment (Flask / Streamlit)
+- Real-time Image Prediction
+- Save and Load Trained Models
+
+---
+
+# 👨‍💻 Author
 
 Abhishek
+
+---
+
+⭐ If you found this repository useful, consider giving it a star!
