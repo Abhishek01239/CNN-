@@ -84,6 +84,43 @@ Flatten → Dense → Dropout → Output (Softmax)
 
 ---
 
+## 5️⃣ CNN Image Colorization
+
+### 📖 Description
+This project uses a Convolutional Neural Network (CNN) to convert grayscale images into colored images.
+
+The model learns color patterns from the CIFAR10 dataset and predicts RGB values from grayscale input.
+
+### 🧠 Model Architecture
+Conv2D → UpSampling → Conv2D → UpSampling → Conv2D → Output RGB
+
+### 📊 Dataset
+CIFAR10 Dataset
+
+### 🚀 Concepts Used
+- Image-to-Image Translation
+- CNN Feature Learning
+- Image Reconstruction
+
+---
+
+## 6️⃣ Traffic Sign Recognition using CNN
+
+### 📖 Description
+This project builds a Convolutional Neural Network to classify traffic signs.  
+Traffic sign recognition is a key component used in autonomous driving systems.
+
+### 🧠 Model Architecture
+Conv2D → MaxPooling → Conv2D → MaxPooling → Flatten → Dense → Output
+
+### 📊 Dataset
+CIFAR10 (used as placeholder for traffic sign dataset)
+
+### 🚀 Concepts Used
+- CNN Image Classification
+- Feature Extraction
+- Model Evaluation
+
 # 🏗 Project Structure
 CNN/
 │
@@ -91,6 +128,8 @@ CNN/
 ├── cat_dog_cnn.py
 ├── fashion_cnn.py
 ├── cifar10_cnn.py
+├── cnn_image_colorization.py
+├── traffic_sign_cnn.py
 ├── README.md
 └── requirements.txt
 
