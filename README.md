@@ -121,6 +121,39 @@ CIFAR10 (used as placeholder for traffic sign dataset)
 - Feature Extraction
 - Model Evaluation
 
+## 7️⃣ Face Mask Detection using CNN
+
+### 📖 Description
+This project builds a Convolutional Neural Network to detect whether a person is wearing a face mask or not.
+
+### 🧠 Model Architecture
+Conv2D → MaxPooling → Conv2D → MaxPooling → Flatten → Dense → Output
+
+### 🚀 Applications
+- Public safety monitoring
+- Automated surveillance systems
+- Smart city AI systems
+
+---
+
+## 8️⃣ Emotion Detection from Faces using CNN
+
+### 📖 Description
+This project uses a Convolutional Neural Network to classify facial emotions from images.
+
+### 🧠 Model Architecture
+Conv2D → MaxPooling → Conv2D → MaxPooling → Flatten → Dense → Output
+
+### 📊 Dataset
+FER2013 Facial Emotion Dataset
+
+### 🚀 Applications
+- Human emotion analysis
+- Smart surveillance systems
+- AI-based mental health tools
+
+---
+
 # 🏗 Project Structure
 CNN/
 │
@@ -130,6 +163,8 @@ CNN/
 ├── cifar10_cnn.py
 ├── cnn_image_colorization.py
 ├── traffic_sign_cnn.py
+├── face_mask_cnn.py
+├── emotion_detection_cnn.py
 ├── README.md
 └── requirements.txt
 
