@@ -154,6 +154,24 @@ FER2013 Facial Emotion Dataset
 
 ---
 
+## 9️⃣ Brain Tumor Detection using CNN
+
+### 📖 Description
+This project uses a Convolutional Neural Network to classify brain MRI images and detect the presence of tumors.
+
+### 🧠 Model Architecture
+Conv2D → MaxPooling → Conv2D → MaxPooling → Flatten → Dense → Output
+
+### 📊 Dataset
+Brain MRI Images Dataset
+
+### 🚀 Applications
+- Medical image analysis
+- Computer-aided diagnosis
+- AI in healthcare
+
+---
+
 # 🏗 Project Structure
 CNN/
 │
@@ -165,6 +183,7 @@ CNN/
 ├── traffic_sign_cnn.py
 ├── face_mask_cnn.py
 ├── emotion_detection_cnn.py
+├── brain_tumor_cnn.py
 ├── README.md
 └── requirements.txt
 
